@@ -1,8 +1,8 @@
 import { Stack } from "expo-router"
 import { colors } from "@/styles/colors"
 import { Loading } from "@/components/loading"
-
-import {  
+import { GestureHandlerRootView } from "react-native-gesture-handler"
+import {
   useFonts,
   Rubik_600SemiBold,
   Rubik_400Regular,
@@ -10,7 +10,7 @@ import {
   Rubik_500Medium
 } from "@expo-google-fonts/rubik"
 export default function Layout() {
-  
+
   const [fontsLoaded] = useFonts({
     Rubik_600SemiBold,
     Rubik_400Regular,
@@ -18,15 +18,17 @@ export default function Layout() {
     Rubik_500Medium
   })
 
-  if(!fontsLoaded) {
+  if (!fontsLoaded) {
     return <Loading />;
   }
 
   return (
-  <Stack 
-  screenOptions={{ 
-    headerShown: false, 
-    contentStyle: { backgroundColor: colors.gray[100] }, 
-  }}/>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          contentStyle: { backgroundColor: colors.gray[100] },
+        }} />
+    </GestureHandlerRootView>
   );
 }
