@@ -1,6 +1,7 @@
 # 🚀 Nearby - Aplicativo de Clube de Benefícios 🎉
 
-![Nearby App](https://ibb.co/yBnmDqFM)
+
+<img width="1920" alt="Thumbnail@2" src="https://github.com/user-attachments/assets/44aaf790-581e-4c2b-8880-b10ce9915469" />
 
 ## 📌 Sobre o Projeto
 
